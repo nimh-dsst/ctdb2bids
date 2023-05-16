@@ -20,7 +20,7 @@ ignore_sheet_list = [
 try:
     ctdb_dict_of_dfs = pandas.read_excel(INPUT, sheet_name=None)
 except PermissionError as err:
-    print(f"Close your spreadsheet and try again.")
+    print(f"Close your spreadsheet, {INPUT}, and try again.")
     raise err
 
 for form, df in ctdb_dict_of_dfs.items():
