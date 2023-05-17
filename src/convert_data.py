@@ -4,8 +4,8 @@ from pathlib import Path
 
 # file path handling
 HERE = Path(__file__).parent.resolve()
+# INPUT = HERE.parent.joinpath('data', '.xlsx')
 INPUT = HERE.parent.joinpath('data', 'HV_CTDB-data-download-20211202.xlsx')
-# INPUT = HERE.parent.joinpath('data', 'NNT CTDB Data Download (modified).xlsx')
 OUTPUT_DIR = HERE.parent.joinpath('phenotype')
 status = OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
